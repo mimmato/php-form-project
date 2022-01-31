@@ -136,4 +136,53 @@ foreach($array2 as $key=>$value) {
     echo "Key $key: $value \n";
 
 }
+
+$y=0;
+
+$array5 = array("name", "email", "address");
+print_r($array5);
+
+while ($array5[$y]) {
+    echo "$array5[$y] <br>";
+
+    $y++;
+}
+
+
+// $_GET variables
+
+//print_r($_GET);
+
+if ( isset($_GET['s'])){
+
+    echo '<p>Your search term is: ' . $_GET['s'];
+
+}
 ?>
+
+<form method="get" action="">
+    <label>Enter search term</label>
+    <input type="search" name="s" value="<?php echo $_GET['s']; ?>">
+
+</form>
+
+<?php
+
+echo "<br>";
+
+//$_POST variables
+
+//print_r($_GET);
+
+if ( isset($_POST['s'] ) ) {
+
+    echo '<p>Your search term is: ' . $_POST['s'];
+
+}
+?>
+
+<form method="post" action="">
+    <label>Enter search term</label>
+    <input type="search" name="s" value="<?php echo $_POST['s']; ?>">
+
+</form>
