@@ -93,7 +93,7 @@ else {
 
 //Cheching if 1 variable is equal to another with Operators
 //use different data type from integer
-// === will check and compare data type
+// === will check and compare data typegiot
 $number12 = 5;
 $number13 = '4';
 $number14 = 5;
@@ -105,7 +105,7 @@ else {
     echo 'false';
 }
 
-switch($number12) {
+switch("$number12 \n") {
     case 1:
         echo 'True';
         break;
@@ -118,9 +118,22 @@ switch($number12) {
 //default can be useful to display statement if all previous queries did not match
 }
 
+//php loops
 
+for($i=1;$i<=10;$i++) {
+    echo "$i \n";
 
+}
 
+for($i=1;$i<=10;$i=$i+4) {
+    echo "$i \n";
 
+}
 
+$array2 = array("name", "email", "address");
+print_r($array2);
+foreach($array2 as $key=>$value) {
+    echo "Key $key: $value \n";
+
+}
 ?>
