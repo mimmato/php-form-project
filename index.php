@@ -113,8 +113,9 @@ switch($number12) {
     case 2:
         echo 'False';
         break;
-
-
+    default:
+        echo 'No idea';
+//default can be useful to display statement if all previous queries did not match
 }
 
 
